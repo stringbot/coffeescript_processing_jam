@@ -1,9 +1,6 @@
-document.GetSiner = (w,h) ->
+document.GetSiner = () ->
   (() ->
-    x = 0
-    y = base = h/2
-    yscale = 100
+    n = 0
     () ->
-      x += 1
-      y += 0.1
-      [x % w, base + (Math.sin(y) * yscale)])()
+      n += 0.1
+      Math.sin(n))()

@@ -1,14 +1,11 @@
 (function() {
-  document.GetSiner = function(w, h) {
+  document.GetSiner = function() {
     return (function() {
-      var base, x, y, yscale;
-      x = 0;
-      y = (base = h / 2);
-      yscale = 100;
+      var n;
+      n = 0;
       return function() {
-        x += 1;
-        y += 0.1;
-        return [x % w, base + (Math.sin(y) * yscale)];
+        n += 0.1;
+        return Math.sin(n);
       };
     })();
   };

@@ -1,4 +1,5 @@
-var siner = document.GetSiner(640,480);
+var x_siner = document.GetSiner();
+var y_siner = document.GetSiner();
 
 void setup() {
   size(640,480);
@@ -7,10 +8,9 @@ void setup() {
 }
 
 void draw() {
-  var coords = siner();
-  int x = coords[0];
-  int y = coords[1];
+  int x = x_siner();
+  int y = y_siner();
   
   background(0);
-  ellipse(x,y,10,10);
+  ellipse(320+x,240+y,10,10);
 }
