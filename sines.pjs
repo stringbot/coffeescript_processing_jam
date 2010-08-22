@@ -1,0 +1,15 @@
+
+void setup() {
+  size(100,100);
+  stroke(100);
+  strokeWeight(2);
+}
+
+void draw() {
+  var coords = document.Siner();
+  int x = coords[0]%100;
+  int y = (coords[1]*10)+50;
+  
+  background(200);
+  ellipse(x,y,10,10);
+}
