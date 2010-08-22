@@ -4,3 +4,9 @@
 | (_| |  __/ |  | |_) |
  \__,_|\___|_|  | .__/ 
                 |_|    
+
+Requires Node.js and coffeescript to build.
+
+Assuming you're on a Mac (cake run uses /usr/bin/open)
+
+$ cake build; cake run 
