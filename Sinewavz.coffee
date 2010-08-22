@@ -1,6 +1,6 @@
-document.GetSiner = () ->
+document.GetSiner = (scale,incr) ->
   (() ->
     n = 0
     () ->
-      n += 0.1
-      Math.sin(n))()
+      n += incr
+      scale*Math.sin(n))()

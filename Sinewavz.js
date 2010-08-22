@@ -1,11 +1,11 @@
 (function() {
-  document.GetSiner = function() {
+  document.GetSiner = function(scale, incr) {
     return (function() {
       var n;
       n = 0;
       return function() {
-        n += 0.1;
-        return Math.sin(n);
+        n += incr;
+        return scale * Math.sin(n);
       };
     })();
   };
