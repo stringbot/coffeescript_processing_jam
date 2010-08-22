@@ -1,18 +1,18 @@
-var x_siner = document.GetSiner(300,1/27);
-var y_siner = document.GetSiner(220,1/33);
-var h_siner = document.GetSiner(25,1/15);
+var x_osc = document.GetSiner(300,1/17);
+var y_osc = document.GetCosiner(220,1/37);
+var r_osc = document.GetSiner(25,1/13);
 
 void setup() {
   size(640,480);
-  stroke(100);
-  strokeWeight(2);
+  frameRate(30);
+  noStroke();
 }
 
 void draw() {
-  int x = x_siner();
-  int y = y_siner();
-  int w = h_siner();
+  int x = 320 + x_osc();
+  int y = 240 + y_osc();
+  int w = 35 + r_osc();
   
-  background(0);
-  ellipse(320+x,240+y,w+25,w+25);
+  background(100);
+  ellipse(x,y,w,w);
 }

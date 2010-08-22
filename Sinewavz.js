@@ -9,4 +9,14 @@
       };
     })();
   };
+  document.GetCosiner = function(scale, incr) {
+    return (function() {
+      var n;
+      n = 0;
+      return function() {
+        n += incr;
+        return scale * Math.cos(n);
+      };
+    })();
+  };
 })();
