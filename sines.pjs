@@ -11,6 +11,6 @@ void draw() {
   int x = coords[0];
   int y = coords[1];
   
-  background(200);
+  background(0);
   ellipse(x,y,10,10);
 }

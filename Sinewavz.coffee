@@ -6,4 +6,4 @@ document.GetSiner = (w,h) ->
     () ->
       x += 1
       y += 0.1
-      [x%w,base+(Math.sin(y)*yscale)])()
+      [x % w, base + (Math.sin(y) * yscale)])()
